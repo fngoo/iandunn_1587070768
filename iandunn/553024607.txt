@@ -1,0 +1,840 @@
+travis_fold:start:worker_info[0K[33;1mWorker information[0m
+hostname: f14b213e-f31d-4e9d-a15b-c28a696b1c25@1.production-1-worker-org-gce-c46x
+version: v6.2.0 https://github.com/travis-ci/worker/tree/5e5476e01646095f48eec13196fdb3faf8f5cbf7
+instance: travis-job-e186fdf6-2d61-46bd-9e9b-c896dd3d63da travis-ci-garnet-trusty-1512502259-986baf0 (via amqp)
+startup: 7.897818618s
+travis_fold:end:worker_info[0Ktravis_fold:start:system_info[0K[33;1mBuild system information[0m
+Build language: php
+Build group: stable
+Build dist: trusty
+Build id: 553024604
+Job id: 553024607
+Runtime kernel version: 4.4.0-101-generic
+travis-build version: f49796497
+[34m[1mBuild image provisioning date and time[0m
+Tue Dec  5 19:58:13 UTC 2017
+[34m[1mOperating System Details[0m
+Distributor ID:	Ubuntu
+Description:	Ubuntu 14.04.5 LTS
+Release:	14.04
+Codename:	trusty
+[34m[1mCookbooks Version[0m
+7c2c6a6 https://github.com/travis-ci/travis-cookbooks/tree/7c2c6a6
+[34m[1mgit version[0m
+git version 2.15.1
+[34m[1mbash version[0m
+GNU bash, version 4.3.11(1)-release (x86_64-pc-linux-gnu)
+[34m[1mgcc version[0m
+gcc (Ubuntu 4.8.4-2ubuntu1~14.04.3) 4.8.4
+Copyright (C) 2013 Free Software Foundation, Inc.
+This is free software; see the source for copying conditions.  There is NO
+warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+
+[34m[1mdocker version[0m
+Client:
+ Version:      17.09.0-ce
+ API version:  1.32
+ Go version:   go1.8.3
+ Git commit:   afdb6d4
+ Built:        Tue Sep 26 22:42:38 2017
+ OS/Arch:      linux/amd64
+
+Server:
+ Version:      17.09.0-ce
+ API version:  1.32 (minimum version 1.12)
+ Go version:   go1.8.3
+ Git commit:   afdb6d4
+ Built:        Tue Sep 26 22:41:20 2017
+ OS/Arch:      linux/amd64
+ Experimental: false
+[34m[1mclang version[0m
+clang version 5.0.0 (tags/RELEASE_500/final)
+Target: x86_64-unknown-linux-gnu
+Thread model: posix
+InstalledDir: /usr/local/clang-5.0.0/bin
+[34m[1mjq version[0m
+jq-1.5
+[34m[1mbats version[0m
+Bats 0.4.0
+[34m[1mshellcheck version[0m
+0.4.6
+[34m[1mshfmt version[0m
+v2.0.0
+[34m[1mccache version[0m
+ccache version 3.1.9
+
+Copyright (C) 2002-2007 Andrew Tridgell
+Copyright (C) 2009-2011 Joel Rosdahl
+
+This program is free software; you can redistribute it and/or modify it under
+the terms of the GNU General Public License as published by the Free Software
+Foundation; either version 3 of the License, or (at your option) any later
+version.
+[34m[1mcmake version[0m
+cmake version 3.9.2
+
+CMake suite maintained and supported by Kitware (kitware.com/cmake).
+[34m[1mheroku version[0m
+heroku-cli/6.14.39-addc925 (linux-x64) node-v9.2.0
+[34m[1mimagemagick version[0m
+Version: ImageMagick 6.7.7-10 2017-07-31 Q16 http://www.imagemagick.org
+[34m[1mmd5deep version[0m
+4.2
+[34m[1mmercurial version[0m
+Mercurial Distributed SCM (version 4.2.2)
+(see https://mercurial-scm.org for more information)
+
+Copyright (C) 2005-2017 Matt Mackall and others
+This is free software; see the source for copying conditions. There is NO
+warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+[34m[1mmysql version[0m
+mysql  Ver 14.14 Distrib 5.6.33, for debian-linux-gnu (x86_64) using  EditLine wrapper
+[34m[1mopenssl version[0m
+OpenSSL 1.0.1f 6 Jan 2014
+[34m[1mpacker version[0m
+Packer v1.0.2
+
+Your version of Packer is out of date! The latest version
+is 1.1.2. You can update by downloading from www.packer.io
+[34m[1mpostgresql client version[0m
+psql (PostgreSQL) 9.6.6
+[34m[1mragel version[0m
+Ragel State Machine Compiler version 6.8 Feb 2013
+Copyright (c) 2001-2009 by Adrian Thurston
+[34m[1msubversion version[0m
+svn, version 1.8.8 (r1568071)
+   compiled Aug 10 2017, 17:20:39 on x86_64-pc-linux-gnu
+
+Copyright (C) 2013 The Apache Software Foundation.
+This software consists of contributions made by many people;
+see the NOTICE file for more information.
+Subversion is open source software, see http://subversion.apache.org/
+
+The following repository access (RA) modules are available:
+
+* ra_svn : Module for accessing a repository using the svn network protocol.
+  - with Cyrus SASL authentication
+  - handles 'svn' scheme
+* ra_local : Module for accessing a repository on local disk.
+  - handles 'file' scheme
+* ra_serf : Module for accessing a repository via WebDAV protocol using serf.
+  - using serf 1.3.3
+  - handles 'http' scheme
+  - handles 'https' scheme
+
+[34m[1msudo version[0m
+Sudo version 1.8.9p5
+Configure options: --prefix=/usr -v --with-all-insults --with-pam --with-fqdn --with-logging=syslog --with-logfac=authpriv --with-env-editor --with-editor=/usr/bin/editor --with-timeout=15 --with-password-timeout=0 --with-passprompt=[sudo] password for %p:  --without-lecture --with-tty-tickets --disable-root-mailer --enable-admin-flag --with-sendmail=/usr/sbin/sendmail --with-timedir=/var/lib/sudo --mandir=/usr/share/man --libexecdir=/usr/lib/sudo --with-sssd --with-sssd-lib=/usr/lib/x86_64-linux-gnu --with-selinux
+Sudoers policy plugin version 1.8.9p5
+Sudoers file grammar version 43
+
+Sudoers path: /etc/sudoers
+Authentication methods: 'pam'
+Syslog facility if syslog is being used for logging: authpriv
+Syslog priority to use when user authenticates successfully: notice
+Syslog priority to use when user authenticates unsuccessfully: alert
+Send mail if the user is not in sudoers
+Use a separate timestamp for each user/tty combo
+Lecture user the first time they run sudo
+Root may run sudo
+Allow some information gathering to give useful error messages
+Require fully-qualified hostnames in the sudoers file
+Visudo will honor the EDITOR environment variable
+Set the LOGNAME and USER environment variables
+Length at which to wrap log file lines (0 for no wrap): 80
+Authentication timestamp timeout: 15.0 minutes
+Password prompt timeout: 0.0 minutes
+Number of tries to enter a password: 3
+Umask to use or 0777 to use user's: 022
+Path to mail program: /usr/sbin/sendmail
+Flags for mail program: -t
+Address to send mail to: root
+Subject line for mail messages: *** SECURITY information for %h ***
+Incorrect password message: Sorry, try again.
+Path to authentication timestamp dir: /var/lib/sudo
+Default password prompt: [sudo] password for %p: 
+Default user to run commands as: root
+Value to override user's $PATH with: /usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin
+Path to the editor for use by visudo: /usr/bin/editor
+When to require a password for 'list' pseudocommand: any
+When to require a password for 'verify' pseudocommand: all
+File descriptors >= 3 will be closed before executing a command
+Environment variables to check for sanity:
+	TZ
+	TERM
+	LINGUAS
+	LC_*
+	LANGUAGE
+	LANG
+	COLORTERM
+Environment variables to remove:
+	RUBYOPT
+	RUBYLIB
+	PYTHONUSERBASE
+	PYTHONINSPECT
+	PYTHONPATH
+	PYTHONHOME
+	TMPPREFIX
+	ZDOTDIR
+	READNULLCMD
+	NULLCMD
+	FPATH
+	PERL5DB
+	PERL5OPT
+	PERL5LIB
+	PERLLIB
+	PERLIO_DEBUG 
+	JAVA_TOOL_OPTIONS
+	SHELLOPTS
+	GLOBIGNORE
+	PS4
+	BASH_ENV
+	ENV
+	TERMCAP
+	TERMPATH
+	TERMINFO_DIRS
+	TERMINFO
+	_RLD*
+	LD_*
+	PATH_LOCALE
+	NLSPATH
+	HOSTALIASES
+	RES_OPTIONS
+	LOCALDOMAIN
+	CDPATH
+	IFS
+Environment variables to preserve:
+	JAVA_HOME
+	TRAVIS
+	CI
+	DEBIAN_FRONTEND
+	XAUTHORIZATION
+	XAUTHORITY
+	PS2
+	PS1
+	PATH
+	LS_COLORS
+	KRB5CCNAME
+	HOSTNAME
+	HOME
+	DISPLAY
+	COLORS
+Locale to use while parsing sudoers: C
+Directory in which to store input/output logs: /var/log/sudo-io
+File in which to store the input/output log: %{seq}
+Add an entry to the utmp/utmpx file when allocating a pty
+PAM service name to use
+PAM service name to use for login shells
+Create a new PAM session for the command to run in
+Maximum I/O log sequence number: 0
+
+Local IP address and netmask pairs:
+	10.240.0.28/255.255.255.255
+	172.17.0.1/255.255.0.0
+
+Sudoers I/O plugin version 1.8.9p5
+[34m[1mgzip version[0m
+gzip 1.6
+Copyright (C) 2007, 2010, 2011 Free Software Foundation, Inc.
+Copyright (C) 1993 Jean-loup Gailly.
+This is free software.  You may redistribute copies of it under the terms of
+the GNU General Public License <http://www.gnu.org/licenses/gpl.html>.
+There is NO WARRANTY, to the extent permitted by law.
+
+Written by Jean-loup Gailly.
+[34m[1mzip version[0m
+Copyright (c) 1990-2008 Info-ZIP - Type 'zip "-L"' for software license.
+This is Zip 3.0 (July 5th 2008), by Info-ZIP.
+Currently maintained by E. Gordon.  Please send bug reports to
+the authors using the web page at www.info-zip.org; see README for details.
+
+Latest sources and executables are at ftp://ftp.info-zip.org/pub/infozip,
+as of above date; see http://www.info-zip.org/ for other sites.
+
+Compiled with gcc 4.8.2 for Unix (Linux ELF) on Oct 21 2013.
+
+Zip special compilation options:
+	USE_EF_UT_TIME       (store Universal Time)
+	BZIP2_SUPPORT        (bzip2 library version 1.0.6, 6-Sept-2010)
+	    bzip2 code and library copyright (c) Julian R Seward
+	    (See the bzip2 license for terms of use)
+	SYMLINK_SUPPORT      (symbolic links supported)
+	LARGE_FILE_SUPPORT   (can read and write large files on file system)
+	ZIP64_SUPPORT        (use Zip64 to store large files in archives)
+	UNICODE_SUPPORT      (store and read UTF-8 Unicode paths)
+	STORE_UNIX_UIDs_GIDs (store UID/GID sizes/values using new extra field)
+	UIDGID_NOT_16BIT     (old Unix 16-bit UID/GID extra field not used)
+	[encryption, version 2.91 of 05 Jan 2007] (modified for Zip 3)
+
+Encryption notice:
+	The encryption code of this program is not copyrighted and is
+	put in the public domain.  It was originally written in Europe
+	and, to the best of our knowledge, can be freely distributed
+	in both source and object forms from any country, including
+	the USA under License Exception TSU of the U.S. Export
+	Administration Regulations (section 740.13(e)) of 6 June 2002.
+
+Zip environment options:
+             ZIP:  [none]
+          ZIPOPT:  [none]
+[34m[1mvim version[0m
+VIM - Vi IMproved 7.4 (2013 Aug 10, compiled Nov 24 2016 16:43:18)
+Included patches: 1-52
+Extra patches: 8.0.0056
+Modified by pkg-vim-maintainers@lists.alioth.debian.org
+Compiled by buildd@
+Huge version without GUI.  Features included (+) or not (-):
++acl             +farsi           +mouse_netterm   +syntax
++arabic          +file_in_path    +mouse_sgr       +tag_binary
++autocmd         +find_in_path    -mouse_sysmouse  +tag_old_static
+-balloon_eval    +float           +mouse_urxvt     -tag_any_white
+-browse          +folding         +mouse_xterm     -tcl
+++builtin_terms  -footer          +multi_byte      +terminfo
++byte_offset     +fork()          +multi_lang      +termresponse
++cindent         +gettext         -mzscheme        +textobjects
+-clientserver    -hangul_input    +netbeans_intg   +title
+-clipboard       +iconv           +path_extra      -toolbar
++cmdline_compl   +insert_expand   -perl            +user_commands
++cmdline_hist    +jumplist        +persistent_undo +vertsplit
++cmdline_info    +keymap          +postscript      +virtualedit
++comments        +langmap         +printer         +visual
++conceal         +libcall         +profile         +visualextra
++cryptv          +linebreak       +python          +viminfo
++cscope          +lispindent      -python3         +vreplace
++cursorbind      +listcmds        +quickfix        +wildignore
++cursorshape     +localmap        +reltime         +wildmenu
++dialog_con      -lua             +rightleft       +windows
++diff            +menu            -ruby            +writebackup
++digraphs        +mksession       +scrollbind      -X11
+-dnd             +modify_fname    +signs           -xfontset
+-ebcdic          +mouse           +smartindent     -xim
++emacs_tags      -mouseshape      -sniff           -xsmp
++eval            +mouse_dec       +startuptime     -xterm_clipboard
++ex_extra        +mouse_gpm       +statusline      -xterm_save
++extra_search    -mouse_jsbterm   -sun_workshop    -xpm
+   system vimrc file: "$VIM/vimrc"
+     user vimrc file: "$HOME/.vimrc"
+ 2nd user vimrc file: "~/.vim/vimrc"
+      user exrc file: "$HOME/.exrc"
+  fall-back for $VIM: "/usr/share/vim"
+Compilation: gcc -c -I. -Iproto -DHAVE_CONFIG_H     -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -U_FORTIFY_SOURCE -D_FORTIFY_SOURCE=1      
+Linking: gcc   -Wl,-Bsymbolic-functions -Wl,-z,relro -Wl,--as-needed -o vim        -lm -ltinfo -lnsl  -lselinux  -lacl -lattr -lgpm -ldl    -L/usr/lib/python2.7/config-x86_64-linux-gnu -lpython2.7 -lpthread -ldl -lutil -lm -Xlinker -export-dynamic -Wl,-O1 -Wl,-Bsymbolic-functions      
+[34m[1miptables version[0m
+iptables v1.4.21
+[34m[1mcurl version[0m
+curl 7.35.0 (x86_64-pc-linux-gnu) libcurl/7.35.0 OpenSSL/1.0.1f zlib/1.2.8 libidn/1.28 librtmp/2.3
+[34m[1mwget version[0m
+GNU Wget 1.15 built on linux-gnu.
+[34m[1mrsync version[0m
+rsync  version 3.1.0  protocol version 31
+[34m[1mgimme version[0m
+v1.2.0
+[34m[1mnvm version[0m
+0.33.6
+[34m[1mperlbrew version[0m
+/home/travis/perl5/perlbrew/bin/perlbrew  - App::perlbrew/0.80
+[34m[1mphpenv version[0m
+rbenv 1.1.1-25-g6aa70b6
+[34m[1mrvm version[0m
+rvm 1.29.3 (latest) by Michal Papis, Piotr Kuczynski, Wayne E. Seguin [https://rvm.io]
+[34m[1mdefault ruby version[0m
+ruby 2.4.1p111 (2017-03-22 revision 58053) [x86_64-linux]
+[34m[1mCouchDB version[0m
+couchdb 1.6.1
+[34m[1mElasticSearch version[0m
+5.5.0
+[34m[1mInstalled Firefox version[0m
+firefox 56.0.2
+[34m[1mMongoDB version[0m
+MongoDB 3.4.10
+[34m[1mPhantomJS version[0m
+2.1.1
+[34m[1mPre-installed PostgreSQL versions[0m
+9.2.24
+9.3.20
+9.4.15
+9.5.10
+9.6.6
+[34m[1mRabbitMQ Version[0m
+3.6.14
+[34m[1mRedis version[0m
+redis-server 4.0.6
+[34m[1mriak version[0m
+2.2.3
+[34m[1mPre-installed Go versions[0m
+1.7.4
+[34m[1mant version[0m
+Apache Ant(TM) version 1.9.3 compiled on April 8 2014
+[34m[1mmvn version[0m
+Apache Maven 3.5.2 (138edd61fd100ec658bfa2d307c43b76940a5d7d; 2017-10-18T07:58:13Z)
+Maven home: /usr/local/maven-3.5.2
+Java version: 1.8.0_151, vendor: Oracle Corporation
+Java home: /usr/lib/jvm/java-8-oracle/jre
+Default locale: en_US, platform encoding: UTF-8
+OS name: "linux", version: "4.4.0-98-generic", arch: "amd64", family: "unix"
+[34m[1mgradle version[0m
+
+------------------------------------------------------------
+Gradle 4.0.1
+------------------------------------------------------------
+
+Build time:   2017-07-07 14:02:41 UTC
+Revision:     38e5dc0f772daecca1d2681885d3d85414eb6826
+
+Groovy:       2.4.11
+Ant:          Apache Ant(TM) version 1.9.6 compiled on June 29 2015
+JVM:          1.8.0_151 (Oracle Corporation 25.151-b12)
+OS:           Linux 4.4.0-98-generic amd64
+
+[34m[1mlein version[0m
+Leiningen 2.8.1 on Java 1.8.0_151 Java HotSpot(TM) 64-Bit Server VM
+[34m[1mPre-installed Node.js versions[0m
+v4.8.6
+v6.12.0
+v6.12.1
+v8.9
+v8.9.1
+[34m[1mphpenv versions[0m
+  system
+  5.6
+* 5.6.32 (set by /home/travis/.phpenv/version)
+  7.0
+  7.0.25
+  7.1
+  7.1.11
+  hhvm
+  hhvm-stable
+[34m[1mcomposer --version[0m
+Composer version 1.5.2 2017-09-11 16:59:25
+[34m[1mPre-installed Ruby versions[0m
+ruby-2.2.7
+ruby-2.3.4
+ruby-2.4.1
+travis_fold:end:system_info[0K
+travis_fold:start:docker_mtu[0Kdocker stop/waiting
+docker start/running, process 3714
+travis_fold:end:docker_mtu[0Ktravis_fold:start:resolvconf[0Kresolvconf stop/waiting
+resolvconf start/running
+travis_fold:end:resolvconf[0Ktravis_fold:start:apt[0K[33;1mInstalling APT Packages[0m
+travis_time:start:04939740[0K$ travis_apt_get_update
+travis_time:end:04939740:start=1562021421136103283,finish=1562021427265698712,duration=6129595429[0Ktravis_time:start:07e16513[0K$ sudo -E apt-get -yq --no-install-suggests --no-install-recommends $(travis_apt_get_options) install libxml2-utils
+Reading package lists...
+Building dependency tree...
+Reading state information...
+The following NEW packages will be installed:
+  libxml2-utils
+0 upgraded, 1 newly installed, 0 to remove and 304 not upgraded.
+Need to get 34.8 kB of archives.
+After this operation, 190 kB of additional disk space will be used.
+Get:1 http://us-east-1.ec2.archive.ubuntu.com/ubuntu trusty-updates/main amd64 libxml2-utils amd64 2.9.1+dfsg1-3ubuntu4.13 [34.8 kB]
+Fetched 34.8 kB in 0s (0 B/s)
+Selecting previously unselected package libxml2-utils.
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 93695 files and directories currently installed.)
+Preparing to unpack .../libxml2-utils_2.9.1+dfsg1-3ubuntu4.13_amd64.deb ...
+Unpacking libxml2-utils (2.9.1+dfsg1-3ubuntu4.13) ...
+Processing triggers for man-db (2.6.7.1-1ubuntu1) ...
+Setting up libxml2-utils (2.9.1+dfsg1-3ubuntu4.13) ...
+travis_time:end:07e16513:start=1562021427269299645,finish=1562021428832280077,duration=1562980432[0Ktravis_fold:end:apt[0K
+travis_fold:start:git.checkout[0Ktravis_time:start:00832090[0K$ git clone --depth=50 https://github.com/xwp/pwa-wp.git xwp/pwa-wp
+Cloning into 'xwp/pwa-wp'...
+remote: Enumerating objects: 2563, done.[K
+remote: Counting objects:   0% (1/2563)   [Kremote: Counting objects:   1% (26/2563)   [Kremote: Counting objects:   2% (52/2563)   [Kremote: Counting objects:   3% (77/2563)   [Kremote: Counting objects:   4% (103/2563)   [Kremote: Counting objects:   5% (129/2563)   [Kremote: Counting objects:   6% (154/2563)   [Kremote: Counting objects:   7% (180/2563)   [Kremote: Counting objects:   8% (206/2563)   [Kremote: Counting objects:   9% (231/2563)   [Kremote: Counting objects:  10% (257/2563)   [Kremote: Counting objects:  11% (282/2563)   [Kremote: Counting objects:  12% (308/2563)   [Kremote: Counting objects:  13% (334/2563)   [Kremote: Counting objects:  14% (359/2563)   [Kremote: Counting objects:  15% (385/2563)   [Kremote: Counting objects:  16% (411/2563)   [Kremote: Counting objects:  17% (436/2563)   [Kremote: Counting objects:  18% (462/2563)   [Kremote: Counting objects:  19% (487/2563)   [Kremote: Counting objects:  20% (513/2563)   [Kremote: Counting objects:  21% (539/2563)   [Kremote: Counting objects:  22% (564/2563)   [Kremote: Counting objects:  23% (590/2563)   [Kremote: Counting objects:  24% (616/2563)   [Kremote: Counting objects:  25% (641/2563)   [Kremote: Counting objects:  26% (667/2563)   [Kremote: Counting objects:  27% (693/2563)   [Kremote: Counting objects:  28% (718/2563)   [Kremote: Counting objects:  29% (744/2563)   [Kremote: Counting objects:  30% (769/2563)   [Kremote: Counting objects:  31% (795/2563)   [Kremote: Counting objects:  32% (821/2563)   [Kremote: Counting objects:  33% (846/2563)   [Kremote: Counting objects:  34% (872/2563)   [Kremote: Counting objects:  35% (898/2563)   [Kremote: Counting objects:  36% (923/2563)   [Kremote: Counting objects:  37% (949/2563)   [Kremote: Counting objects:  38% (974/2563)   [Kremote: Counting objects:  39% (1000/2563)   [Kremote: Counting objects:  40% (1026/2563)   [Kremote: Counting objects:  41% (1051/2563)   [Kremote: Counting objects:  42% (1077/2563)   [Kremote: Counting objects:  43% (1103/2563)   [Kremote: Counting objects:  44% (1128/2563)   [Kremote: Counting objects:  45% (1154/2563)   [Kremote: Counting objects:  46% (1179/2563)   [Kremote: Counting objects:  47% (1205/2563)   [Kremote: Counting objects:  48% (1231/2563)   [Kremote: Counting objects:  49% (1256/2563)   [Kremote: Counting objects:  50% (1282/2563)   [Kremote: Counting objects:  51% (1308/2563)   [Kremote: Counting objects:  52% (1333/2563)   [Kremote: Counting objects:  53% (1359/2563)   [Kremote: Counting objects:  54% (1385/2563)   [Kremote: Counting objects:  55% (1410/2563)   [Kremote: Counting objects:  56% (1436/2563)   [Kremote: Counting objects:  57% (1461/2563)   [Kremote: Counting objects:  58% (1487/2563)   [Kremote: Counting objects:  59% (1513/2563)   [Kremote: Counting objects:  60% (1538/2563)   [Kremote: Counting objects:  61% (1564/2563)   [Kremote: Counting objects:  62% (1590/2563)   [Kremote: Counting objects:  63% (1615/2563)   [Kremote: Counting objects:  64% (1641/2563)   [Kremote: Counting objects:  65% (1666/2563)   [Kremote: Counting objects:  66% (1692/2563)   [Kremote: Counting objects:  67% (1718/2563)   [Kremote: Counting objects:  68% (1743/2563)   [Kremote: Counting objects:  69% (1769/2563)   [Kremote: Counting objects:  70% (1795/2563)   [Kremote: Counting objects:  71% (1820/2563)   [Kremote: Counting objects:  72% (1846/2563)   [Kremote: Counting objects:  73% (1871/2563)   [Kremote: Counting objects:  74% (1897/2563)   [Kremote: Counting objects:  75% (1923/2563)   [Kremote: Counting objects:  76% (1948/2563)   [Kremote: Counting objects:  77% (1974/2563)   [Kremote: Counting objects:  78% (2000/2563)   [Kremote: Counting objects:  79% (2025/2563)   [Kremote: Counting objects:  80% (2051/2563)   [Kremote: Counting objects:  81% (2077/2563)   [Kremote: Counting objects:  82% (2102/2563)   [Kremote: Counting objects:  83% (2128/2563)   [Kremote: Counting objects:  84% (2153/2563)   [Kremote: Counting objects:  85% (2179/2563)   [Kremote: Counting objects:  86% (2205/2563)   [Kremote: Counting objects:  87% (2230/2563)   [Kremote: Counting objects:  88% (2256/2563)   [Kremote: Counting objects:  89% (2282/2563)   [Kremote: Counting objects:  90% (2307/2563)   [Kremote: Counting objects:  91% (2333/2563)   [Kremote: Counting objects:  92% (2358/2563)   [Kremote: Counting objects:  93% (2384/2563)   [Kremote: Counting objects:  94% (2410/2563)   [Kremote: Counting objects:  95% (2435/2563)   [Kremote: Counting objects:  96% (2461/2563)   [Kremote: Counting objects:  97% (2487/2563)   [Kremote: Counting objects:  98% (2512/2563)   [Kremote: Counting objects:  99% (2538/2563)   [Kremote: Counting objects: 100% (2563/2563)   [Kremote: Counting objects: 100% (2563/2563), done.[K
+remote: Compressing objects:   0% (1/704)   [Kremote: Compressing objects:   1% (8/704)   [Kremote: Compressing objects:   2% (15/704)   [Kremote: Compressing objects:   3% (22/704)   [Kremote: Compressing objects:   4% (29/704)   [Kremote: Compressing objects:   5% (36/704)   [Kremote: Compressing objects:   6% (43/704)   [Kremote: Compressing objects:   7% (50/704)   [Kremote: Compressing objects:   8% (57/704)   [Kremote: Compressing objects:   9% (64/704)   [Kremote: Compressing objects:  10% (71/704)   [Kremote: Compressing objects:  11% (78/704)   [Kremote: Compressing objects:  12% (85/704)   [Kremote: Compressing objects:  13% (92/704)   [Kremote: Compressing objects:  14% (99/704)   [Kremote: Compressing objects:  15% (106/704)   [Kremote: Compressing objects:  16% (113/704)   [Kremote: Compressing objects:  17% (120/704)   [Kremote: Compressing objects:  18% (127/704)   [Kremote: Compressing objects:  19% (134/704)   [Kremote: Compressing objects:  20% (141/704)   [Kremote: Compressing objects:  21% (148/704)   [Kremote: Compressing objects:  22% (155/704)   [Kremote: Compressing objects:  23% (162/704)   [Kremote: Compressing objects:  24% (169/704)   [Kremote: Compressing objects:  25% (176/704)   [Kremote: Compressing objects:  26% (184/704)   [Kremote: Compressing objects:  27% (191/704)   [Kremote: Compressing objects:  28% (198/704)   [Kremote: Compressing objects:  29% (205/704)   [Kremote: Compressing objects:  30% (212/704)   [Kremote: Compressing objects:  31% (219/704)   [Kremote: Compressing objects:  32% (226/704)   [Kremote: Compressing objects:  33% (233/704)   [Kremote: Compressing objects:  34% (240/704)   [Kremote: Compressing objects:  35% (247/704)   [Kremote: Compressing objects:  36% (254/704)   [Kremote: Compressing objects:  37% (261/704)   [Kremote: Compressing objects:  38% (268/704)   [Kremote: Compressing objects:  39% (275/704)   [Kremote: Compressing objects:  40% (282/704)   [Kremote: Compressing objects:  41% (289/704)   [Kremote: Compressing objects:  42% (296/704)   [Kremote: Compressing objects:  43% (303/704)   [Kremote: Compressing objects:  44% (310/704)   [Kremote: Compressing objects:  45% (317/704)   [Kremote: Compressing objects:  46% (324/704)   [Kremote: Compressing objects:  47% (331/704)   [Kremote: Compressing objects:  48% (338/704)   [Kremote: Compressing objects:  49% (345/704)   [Kremote: Compressing objects:  50% (352/704)   [Kremote: Compressing objects:  51% (360/704)   [Kremote: Compressing objects:  52% (367/704)   [Kremote: Compressing objects:  53% (374/704)   [Kremote: Compressing objects:  54% (381/704)   [Kremote: Compressing objects:  55% (388/704)   [Kremote: Compressing objects:  56% (395/704)   [Kremote: Compressing objects:  57% (402/704)   [Kremote: Compressing objects:  58% (409/704)   [Kremote: Compressing objects:  59% (416/704)   [Kremote: Compressing objects:  60% (423/704)   [Kremote: Compressing objects:  61% (430/704)   [Kremote: Compressing objects:  62% (437/704)   [Kremote: Compressing objects:  63% (444/704)   [Kremote: Compressing objects:  64% (451/704)   [Kremote: Compressing objects:  65% (458/704)   [Kremote: Compressing objects:  66% (465/704)   [Kremote: Compressing objects:  67% (472/704)   [Kremote: Compressing objects:  68% (479/704)   [Kremote: Compressing objects:  69% (486/704)   [Kremote: Compressing objects:  70% (493/704)   [Kremote: Compressing objects:  71% (500/704)   [Kremote: Compressing objects:  72% (507/704)   [Kremote: Compressing objects:  73% (514/704)   [Kremote: Compressing objects:  74% (521/704)   [Kremote: Compressing objects:  75% (528/704)   [Kremote: Compressing objects:  76% (536/704)   [Kremote: Compressing objects:  77% (543/704)   [Kremote: Compressing objects:  78% (550/704)   [Kremote: Compressing objects:  79% (557/704)   [Kremote: Compressing objects:  80% (564/704)   [Kremote: Compressing objects:  81% (571/704)   [Kremote: Compressing objects:  82% (578/704)   [Kremote: Compressing objects:  83% (585/704)   [Kremote: Compressing objects:  84% (592/704)   [Kremote: Compressing objects:  85% (599/704)   [Kremote: Compressing objects:  86% (606/704)   [Kremote: Compressing objects:  87% (613/704)   [Kremote: Compressing objects:  88% (620/704)   [Kremote: Compressing objects:  89% (627/704)   [Kremote: Compressing objects:  90% (634/704)   [Kremote: Compressing objects:  91% (641/704)   [Kremote: Compressing objects:  92% (648/704)   [Kremote: Compressing objects:  93% (655/704)   [Kremote: Compressing objects:  94% (662/704)   [Kremote: Compressing objects:  95% (669/704)   [Kremote: Compressing objects:  96% (676/704)   [Kremote: Compressing objects:  97% (683/704)   [Kremote: Compressing objects:  98% (690/704)   [Kremote: Compressing objects:  99% (697/704)   [Kremote: Compressing objects: 100% (704/704)   [Kremote: Compressing objects: 100% (704/704), done.[K
+Receiving objects:   0% (1/2563)   Receiving objects:   1% (26/2563)   Receiving objects:   2% (52/2563)   Receiving objects:   3% (77/2563)   Receiving objects:   4% (103/2563)   Receiving objects:   5% (129/2563)   Receiving objects:   6% (154/2563)   Receiving objects:   7% (180/2563)   Receiving objects:   8% (206/2563)   Receiving objects:   9% (231/2563)   Receiving objects:  10% (257/2563)   Receiving objects:  11% (282/2563)   Receiving objects:  12% (308/2563)   Receiving objects:  13% (334/2563)   Receiving objects:  14% (359/2563)   Receiving objects:  15% (385/2563)   Receiving objects:  16% (411/2563)   Receiving objects:  17% (436/2563)   Receiving objects:  18% (462/2563)   Receiving objects:  19% (487/2563)   Receiving objects:  20% (513/2563)   Receiving objects:  21% (539/2563)   Receiving objects:  22% (564/2563)   Receiving objects:  23% (590/2563)   Receiving objects:  24% (616/2563)   Receiving objects:  25% (641/2563)   Receiving objects:  26% (667/2563)   Receiving objects:  27% (693/2563)   Receiving objects:  28% (718/2563)   Receiving objects:  29% (744/2563)   Receiving objects:  30% (769/2563)   Receiving objects:  31% (795/2563)   Receiving objects:  32% (821/2563)   Receiving objects:  33% (846/2563)   Receiving objects:  34% (872/2563)   Receiving objects:  35% (898/2563)   Receiving objects:  36% (923/2563)   Receiving objects:  37% (949/2563)   Receiving objects:  38% (974/2563)   Receiving objects:  39% (1000/2563)   Receiving objects:  40% (1026/2563)   Receiving objects:  41% (1051/2563)   Receiving objects:  42% (1077/2563)   Receiving objects:  43% (1103/2563)   Receiving objects:  44% (1128/2563)   Receiving objects:  45% (1154/2563)   Receiving objects:  46% (1179/2563)   Receiving objects:  47% (1205/2563)   Receiving objects:  48% (1231/2563)   Receiving objects:  49% (1256/2563)   Receiving objects:  50% (1282/2563)   Receiving objects:  51% (1308/2563)   Receiving objects:  52% (1333/2563)   Receiving objects:  53% (1359/2563)   Receiving objects:  54% (1385/2563)   Receiving objects:  55% (1410/2563)   Receiving objects:  56% (1436/2563)   Receiving objects:  57% (1461/2563)   Receiving objects:  58% (1487/2563)   Receiving objects:  59% (1513/2563)   Receiving objects:  60% (1538/2563)   Receiving objects:  61% (1564/2563)   Receiving objects:  62% (1590/2563)   Receiving objects:  63% (1615/2563)   Receiving objects:  64% (1641/2563)   Receiving objects:  65% (1666/2563)   Receiving objects:  66% (1692/2563)   Receiving objects:  67% (1718/2563)   Receiving objects:  68% (1743/2563)   Receiving objects:  69% (1769/2563)   Receiving objects:  70% (1795/2563)   Receiving objects:  71% (1820/2563)   Receiving objects:  72% (1846/2563)   Receiving objects:  73% (1871/2563)   Receiving objects:  74% (1897/2563)   Receiving objects:  75% (1923/2563)   Receiving objects:  76% (1948/2563)   Receiving objects:  77% (1974/2563)   Receiving objects:  78% (2000/2563)   Receiving objects:  79% (2025/2563)   Receiving objects:  80% (2051/2563)   Receiving objects:  81% (2077/2563)   Receiving objects:  82% (2102/2563)   Receiving objects:  83% (2128/2563)   Receiving objects:  84% (2153/2563)   Receiving objects:  85% (2179/2563)   Receiving objects:  86% (2205/2563)   Receiving objects:  87% (2230/2563)   Receiving objects:  88% (2256/2563)   Receiving objects:  89% (2282/2563)   Receiving objects:  90% (2307/2563)   remote: Total 2563 (delta 1927), reused 2454 (delta 1851), pack-reused 0
+Receiving objects:  91% (2333/2563)   Receiving objects:  92% (2358/2563)   Receiving objects:  93% (2384/2563)   Receiving objects:  94% (2410/2563)   Receiving objects:  95% (2435/2563)   Receiving objects:  96% (2461/2563)   Receiving objects:  97% (2487/2563)   Receiving objects:  98% (2512/2563)   Receiving objects:  99% (2538/2563)   Receiving objects: 100% (2563/2563)   Receiving objects: 100% (2563/2563), 1.42 MiB | 11.81 MiB/s, done.
+Resolving deltas:   0% (0/1927)   Resolving deltas:   3% (66/1927)   Resolving deltas:   4% (90/1927)   Resolving deltas:   5% (110/1927)   Resolving deltas:   6% (120/1927)   Resolving deltas:   8% (170/1927)   Resolving deltas:  10% (203/1927)   Resolving deltas:  13% (262/1927)   Resolving deltas:  14% (271/1927)   Resolving deltas:  16% (310/1927)   Resolving deltas:  17% (329/1927)   Resolving deltas:  18% (359/1927)   Resolving deltas:  20% (389/1927)   Resolving deltas:  23% (457/1927)   Resolving deltas:  34% (657/1927)   Resolving deltas:  36% (704/1927)   Resolving deltas:  37% (714/1927)   Resolving deltas:  38% (748/1927)   Resolving deltas:  39% (761/1927)   Resolving deltas:  40% (772/1927)   Resolving deltas:  42% (812/1927)   Resolving deltas:  43% (842/1927)   Resolving deltas:  45% (879/1927)   Resolving deltas:  46% (888/1927)   Resolving deltas:  47% (912/1927)   Resolving deltas:  49% (955/1927)   Resolving deltas:  50% (964/1927)   Resolving deltas:  51% (983/1927)   Resolving deltas:  52% (1004/1927)   Resolving deltas:  53% (1023/1927)   Resolving deltas:  54% (1042/1927)   Resolving deltas:  56% (1086/1927)   Resolving deltas:  57% (1111/1927)   Resolving deltas:  58% (1133/1927)   Resolving deltas:  59% (1143/1927)   Resolving deltas:  60% (1157/1927)   Resolving deltas:  61% (1188/1927)   Resolving deltas:  63% (1216/1927)   Resolving deltas:  64% (1237/1927)   Resolving deltas:  65% (1264/1927)   Resolving deltas:  66% (1274/1927)   Resolving deltas:  67% (1307/1927)   Resolving deltas:  68% (1311/1927)   Resolving deltas:  69% (1331/1927)   Resolving deltas:  70% (1350/1927)   Resolving deltas:  71% (1377/1927)   Resolving deltas:  72% (1395/1927)   Resolving deltas:  73% (1409/1927)   Resolving deltas:  74% (1435/1927)   Resolving deltas:  75% (1447/1927)   Resolving deltas:  76% (1466/1927)   Resolving deltas:  77% (1487/1927)   Resolving deltas:  78% (1507/1927)   Resolving deltas:  79% (1535/1927)   Resolving deltas:  80% (1554/1927)   Resolving deltas:  81% (1564/1927)   Resolving deltas:  82% (1581/1927)   Resolving deltas:  83% (1607/1927)   Resolving deltas:  84% (1619/1927)   Resolving deltas:  85% (1638/1927)   Resolving deltas:  86% (1658/1927)   Resolving deltas:  87% (1677/1927)   Resolving deltas:  88% (1699/1927)   Resolving deltas:  89% (1718/1927)   Resolving deltas:  90% (1742/1927)   Resolving deltas:  91% (1764/1927)   Resolving deltas:  92% (1775/1927)   Resolving deltas:  93% (1794/1927)   Resolving deltas:  94% (1821/1927)   Resolving deltas:  95% (1838/1927)   Resolving deltas:  96% (1852/1927)   Resolving deltas:  97% (1871/1927)   Resolving deltas:  98% (1891/1927)   Resolving deltas:  99% (1908/1927)   Resolving deltas: 100% (1927/1927)   Resolving deltas: 100% (1927/1927), done.
+travis_time:end:00832090:start=1562021428836321360,finish=1562021429647371717,duration=811050357[0K$ cd xwp/pwa-wp
+travis_time:start:1a841a60[0K$ git fetch origin +refs/pull/178/merge:
+remote: Enumerating objects: 85, done.[K
+remote: Counting objects:   1% (1/70)   [Kremote: Counting objects:   2% (2/70)   [Kremote: Counting objects:   4% (3/70)   [Kremote: Counting objects:   5% (4/70)   [Kremote: Counting objects:   7% (5/70)   [Kremote: Counting objects:   8% (6/70)   [Kremote: Counting objects:  10% (7/70)   [Kremote: Counting objects:  11% (8/70)   [Kremote: Counting objects:  12% (9/70)   [Kremote: Counting objects:  14% (10/70)   [Kremote: Counting objects:  15% (11/70)   [Kremote: Counting objects:  17% (12/70)   [Kremote: Counting objects:  18% (13/70)   [Kremote: Counting objects:  20% (14/70)   [Kremote: Counting objects:  21% (15/70)   [Kremote: Counting objects:  22% (16/70)   [Kremote: Counting objects:  24% (17/70)   [Kremote: Counting objects:  25% (18/70)   [Kremote: Counting objects:  27% (19/70)   [Kremote: Counting objects:  28% (20/70)   [Kremote: Counting objects:  30% (21/70)   [Kremote: Counting objects:  31% (22/70)   [Kremote: Counting objects:  32% (23/70)   [Kremote: Counting objects:  34% (24/70)   [Kremote: Counting objects:  35% (25/70)   [Kremote: Counting objects:  37% (26/70)   [Kremote: Counting objects:  38% (27/70)   [Kremote: Counting objects:  40% (28/70)   [Kremote: Counting objects:  41% (29/70)   [Kremote: Counting objects:  42% (30/70)   [Kremote: Counting objects:  44% (31/70)   [Kremote: Counting objects:  45% (32/70)   [Kremote: Counting objects:  47% (33/70)   [Kremote: Counting objects:  48% (34/70)   [Kremote: Counting objects:  50% (35/70)   [Kremote: Counting objects:  51% (36/70)   [Kremote: Counting objects:  52% (37/70)   [Kremote: Counting objects:  54% (38/70)   [Kremote: Counting objects:  55% (39/70)   [Kremote: Counting objects:  57% (40/70)   [Kremote: Counting objects:  58% (41/70)   [Kremote: Counting objects:  60% (42/70)   [Kremote: Counting objects:  61% (43/70)   [Kremote: Counting objects:  62% (44/70)   [Kremote: Counting objects:  64% (45/70)   [Kremote: Counting objects:  65% (46/70)   [Kremote: Counting objects:  67% (47/70)   [Kremote: Counting objects:  68% (48/70)   [Kremote: Counting objects:  70% (49/70)   [Kremote: Counting objects:  71% (50/70)   [Kremote: Counting objects:  72% (51/70)   [Kremote: Counting objects:  74% (52/70)   [Kremote: Counting objects:  75% (53/70)   [Kremote: Counting objects:  77% (54/70)   [Kremote: Counting objects:  78% (55/70)   [Kremote: Counting objects:  80% (56/70)   [Kremote: Counting objects:  81% (57/70)   [Kremote: Counting objects:  82% (58/70)   [Kremote: Counting objects:  84% (59/70)   [Kremote: Counting objects:  85% (60/70)   [Kremote: Counting objects:  87% (61/70)   [Kremote: Counting objects:  88% (62/70)   [Kremote: Counting objects:  90% (63/70)   [Kremote: Counting objects:  91% (64/70)   [Kremote: Counting objects:  92% (65/70)   [Kremote: Counting objects:  94% (66/70)   [Kremote: Counting objects:  95% (67/70)   [Kremote: Counting objects:  97% (68/70)   [Kremote: Counting objects:  98% (69/70)   [Kremote: Counting objects: 100% (70/70)   [Kremote: Counting objects: 100% (70/70), done.[K
+remote: Compressing objects:  10% (1/10)   [Kremote: Compressing objects:  20% (2/10)   [Kremote: Compressing objects:  30% (3/10)   [Kremote: Compressing objects:  40% (4/10)   [Kremote: Compressing objects:  50% (5/10)   [Kremote: Compressing objects:  60% (6/10)   [Kremote: Compressing objects:  70% (7/10)   [Kremote: Compressing objects:  80% (8/10)   [Kremote: Compressing objects:  90% (9/10)   [Kremote: Compressing objects: 100% (10/10)   [Kremote: Compressing objects: 100% (10/10), done.[K
+remote: Total 30 (delta 24), reused 25 (delta 20), pack-reused 0[K
+Unpacking objects:   3% (1/30)   Unpacking objects:   6% (2/30)   Unpacking objects:  10% (3/30)   Unpacking objects:  13% (4/30)   Unpacking objects:  16% (5/30)   Unpacking objects:  20% (6/30)   Unpacking objects:  23% (7/30)   Unpacking objects:  26% (8/30)   Unpacking objects:  30% (9/30)   Unpacking objects:  33% (10/30)   Unpacking objects:  36% (11/30)   Unpacking objects:  40% (12/30)   Unpacking objects:  43% (13/30)   Unpacking objects:  46% (14/30)   Unpacking objects:  50% (15/30)   Unpacking objects:  53% (16/30)   Unpacking objects:  56% (17/30)   Unpacking objects:  60% (18/30)   Unpacking objects:  63% (19/30)   Unpacking objects:  66% (20/30)   Unpacking objects:  70% (21/30)   Unpacking objects:  73% (22/30)   Unpacking objects:  76% (23/30)   Unpacking objects:  80% (24/30)   Unpacking objects:  83% (25/30)   Unpacking objects:  86% (26/30)   Unpacking objects:  90% (27/30)   Unpacking objects:  93% (28/30)   Unpacking objects:  96% (29/30)   Unpacking objects: 100% (30/30)   Unpacking objects: 100% (30/30), done.
+From https://github.com/xwp/pwa-wp
+ * branch            refs/pull/178/merge -> FETCH_HEAD
+travis_time:end:1a841a60:start=1562021429651262856,finish=1562021430084694123,duration=433431267[0K$ git checkout -qf FETCH_HEAD
+travis_fold:end:git.checkout[0K
+
+[33;1mSetting environment variables from .travis.yml[0m
+$ export WP_VERSION=latest
+$ export DEV_LIB_SKIP=phpcs
+
+travis_time:start:1ed4c9e8[0K$ phpenv global 5.6 2>/dev/null
+travis_time:end:1ed4c9e8:start=1562021430099880979,finish=1562021430117710120,duration=17829141[0Ktravis_fold:start:pearrc[0K[33;1mWriting /home/travis/.pearrc[0m
+travis_time:start:0de993e4[0Ktravis_time:end:0de993e4:start=1562021430121637232,finish=1562021430332530825,duration=210893593[0Ktravis_time:start:0787fe90[0K$ pear config-show
+[1mConfiguration (channel pear.php.net):[m
+=====================================
+Auto-discover new Channels     auto_discover    1
+Default Channel                default_channel  pear.php.net
+HTTP Proxy Server Address      http_proxy       <not set>
+PEAR server [DEPRECATED]       master_server    pear.php.net
+Default Channel Mirror         preferred_mirror pear.php.net
+Remote Configuration File      remote_config    <not set>
+PEAR executables directory     bin_dir          /home/travis/.phpenv/versions/5.6/bin
+PEAR documentation directory   doc_dir          /home/travis/.phpenv/versions/5.6/docs
+PHP extension directory        ext_dir          /home/travis/.phpenv/versions/5.6.32/lib/php/extensions/no-debug-zts-20131226
+PEAR directory                 php_dir          /home/travis/.phpenv/versions/5.6/share/pear
+PEAR Installer cache directory cache_dir        /tmp/pear/cache
+PEAR configuration file        cfg_dir          /home/travis/.phpenv/versions/5.6/cfg
+directory
+PEAR data directory            data_dir         /home/travis/.phpenv/versions/5.6/data
+PEAR Installer download        download_dir     /tmp/pear/install
+directory
+Systems manpage files          man_dir          /home/travis/.phpenv/versions/5.6/man
+directory
+PEAR metadata directory        metadata_dir     <not set>
+PHP CLI/CGI binary             php_bin          /home/travis/.phpenv/versions/5.6.32/bin/php
+php.ini location               php_ini          /home/travis/.phpenv/versions/5.6.32/etc/php.ini
+--program-prefix passed to     php_prefix       <not set>
+PHP's ./configure
+--program-suffix passed to     php_suffix       <not set>
+PHP's ./configure
+PEAR Installer temp directory  temp_dir         /tmp/pear/install
+PEAR test directory            test_dir         /home/travis/.phpenv/versions/5.6/tests
+PEAR www files directory       www_dir          /home/travis/.phpenv/versions/5.6/www
+Cache TimeToLive               cache_ttl        3600
+Preferred Package State        preferred_state  stable
+Unix file mask                 umask            2
+Debug Log Level                verbose          1
+PEAR password (for             password         <not set>
+maintainers)
+Signature Handling Program     sig_bin          /usr/bin/gpg
+Signature Key Directory        sig_keydir       /home/travis/.phpenv/versions/5.6.32/etc/pearkeys
+Signature Key Id               sig_keyid        <not set>
+Package Signature Type         sig_type         gpg
+PEAR username (for             username         <not set>
+maintainers)
+User Configuration File        Filename         /home/travis/.pearrc
+System Configuration File      Filename         /home/travis/.phpenv/versions/5.6.32/etc/pear.conf
+travis_time:end:0787fe90:start=1562021430336261680,finish=1562021430493639379,duration=157377699[0Ktravis_fold:end:pearrc[0Ktravis_time:start:00320a00[0K$ phpenv global 5.6
+travis_time:end:00320a00:start=1562021430497498182,finish=1562021430512552144,duration=15053962[0Ktravis_time:start:0f6e993a[0K$ composer self-update
+Updating to version [32m1.8.6[39m (stable channel).
+   Downloading ([33mconnecting...[39m)Downloading ([33m100%[39m)         
+Use [32mcomposer self-update --rollback[39m to return to version 1.5.2
+travis_time:end:0f6e993a:start=1562021430770414295,finish=1562021432005710411,duration=1235296116[0Ktravis_fold:start:cache.1[0KSetting up build cache
+$ export CASHER_DIR=${TRAVIS_HOME}/.casher
+travis_time:start:0d79efe0[0K$ Installing caching utilities
+travis_time:end:0d79efe0:start=1562021436235858292,finish=1562021436412099183,duration=176240891[0Ktravis_time:start:13b91adc[0Ktravis_time:end:13b91adc:start=1562021436417069764,finish=1562021436419790349,duration=2720585[0Ktravis_time:start:075b1d80[0Kattempting to download cache archive[0m
+[32;1mfetching PR.178/cache-linux-trusty-f28df08ef2699919229764ecee79b38d2ec59f8a0ec11d07ab6d9d8ccab4866d--php-5.6.tgz[0m
+[32;1mfound cache[0m
+travis_time:end:075b1d80:start=1562021436423249337,finish=1562021438536265067,duration=2113015730[0Ktravis_time:start:000c0cd0[0Ktravis_time:end:000c0cd0:start=1562021438540438394,finish=1562021438543361388,duration=2922994[0Ktravis_time:start:097c3ef2[0Kadding /home/travis/.composer/cache to cache[0m
+creating directory /home/travis/.composer/cache[0m
+adding /home/travis/.npm to cache[0m
+adding /home/travis/.nvm/.cache to cache[0m
+adding /home/travis/phpunit-bin to cache[0m
+creating directory /home/travis/phpunit-bin[0m
+adding /home/travis/deployment-targets to cache[0m
+creating directory /home/travis/deployment-targets[0m
+travis_time:end:097c3ef2:start=1562021438547224566,finish=1562021440563798663,duration=2016574097[0Ktravis_fold:end:cache.1[0K
+$ php --version
+PHP 5.6.32 (cli) (built: Nov 10 2017 14:40:45) 
+Copyright (c) 1997-2016 The PHP Group
+Zend Engine v2.6.0, Copyright (c) 1998-2016 Zend Technologies
+    with Zend OPcache v7.0.6-dev, Copyright (c) 1999-2016, by Zend Technologies
+    with Xdebug v2.5.5, Copyright (c) 2002-2017, by Derick Rethans
+$ composer --version
+[32mComposer[39m version [33m1.8.6[39m 2019-06-11 15:03:05
+[0m
+travis_fold:start:install.1[0Ktravis_time:start:34d8cb7e[0K$ composer install
+[32mLoading composer repositories with package information[39m
+[32mInstalling dependencies (including require-dev) from lock file[39m
+[32mPackage operations: 6 installs, 0 updates, 0 removals[39m
+  - Installing [32msquizlabs/php_codesniffer[39m ([33m3.4.1[39m): Loading from cache
+  - Installing [32mdealerdirect/phpcodesniffer-composer-installer[39m ([33mv0.4.4[39m): Loading from cache
+  - Installing [32mphpcompatibility/php-compatibility[39m ([33m8.2.0[39m): Loading from cache
+  - Installing [32mphpcompatibility/phpcompatibility-wp[39m ([33m1.0.0[39m): Loading from cache
+  - Installing [32mwp-coding-standards/wpcs[39m ([33m1.2.1[39m): Loading from cache
+  - Installing [32mxwp/wp-dev-lib[39m ([33m1.1.1[39m): Loading from cache
+dealerdirect/phpcodesniffer-composer-installer suggests installing dealerdirect/qa-tools (All the PHP QA tools you'll need)
+phpcompatibility/php-compatibility suggests installing roave/security-advisories (dev-master || Helps prevent installing dependencies with known security issues.)
+phpcompatibility/phpcompatibility-wp suggests installing roave/security-advisories (dev-master || Helps prevent installing dependencies with known security issues.)
+[32mGenerating autoload files[39m
+PHP CodeSniffer Config [32minstalled_paths[39m [33mset to[39m [32m../../phpcompatibility/php-compatibility/,../../phpcompatibility/phpcompatibility-wp/,../../wp-coding-standards/wpcs/[39m
+travis_time:end:34d8cb7e:start=1562021440845826237,finish=1562021441696443873,duration=850617636[0Ktravis_fold:end:install.1[0Ktravis_fold:start:install.2[0Ktravis_time:start:03fb4f5c[0K$ nvm install 8.15.1 && nvm use 8.15.1
+Downloading and installing node v8.15.1...
+Local cache found: $NVM_DIR/.cache/bin/node-v8.15.1-linux-x64/node-v8.15.1-linux-x64.tar.xz
+Checksums match! Using existing downloaded archive $NVM_DIR/.cache/bin/node-v8.15.1-linux-x64/node-v8.15.1-linux-x64.tar.xz
+Now using node v8.15.1 (npm v6.4.1)
+Now using node v8.15.1 (npm v6.4.1)
+travis_time:end:03fb4f5c:start=1562021441700798438,finish=1562021444524762379,duration=2823963941[0Ktravis_fold:end:install.2[0Ktravis_fold:start:install.3[0Ktravis_time:start:13d5a328[0K$ npm install
+
+> husky@0.14.3 install /home/travis/build/xwp/pwa-wp/node_modules/husky
+> node ./bin/install.js
+
+husky
+CI detected, skipping Git hooks installation
+[37;40mnpm[0m [0m[30;43mWARN[0m [0m[35moptional[0m SKIPPING OPTIONAL DEPENDENCY: fsevents@1.2.9 (node_modules/fsevents):
+[0m[37;40mnpm[0m [0m[30;43mWARN[0m [0m[35mnotsup[0m SKIPPING OPTIONAL DEPENDENCY: Unsupported platform for fsevents@1.2.9: wanted {"os":"darwin","arch":"any"} (current: {"os":"linux","arch":"x64"})
+[0m
+added 492 packages from 267 contributors and audited 3823 packages in 7.83s
+found [92m0[0m vulnerabilities
+
+travis_time:end:13d5a328:start=1562021444528775992,finish=1562021452768925251,duration=8240149259[0Ktravis_fold:end:install.3[0Ktravis_fold:start:install.4[0Ktravis_time:start:1d4cc834[0K$ npm run build
+
+> pwa-wp@ build /home/travis/build/xwp/pwa-wp
+> grunt build; grunt create-build-zip
+
+[4mRunning "build" task[24m
+
+[4mRunning "shell:install_workbox" (shell) task[24m
+The Workbox libraries were copied to /home/travis/build/xwp/pwa-wp/wp-includes/js/workbox-v4.3.1
+Add a call to workbox.setConfig({modulePathPrefix: '...'}) to your service worker to use these local libraries.
+See https://goo.gl/Fo9gPX for further documentation.
+
+[4mRunning "clean:build" (clean) task[24m
+[32m>> [39m0 paths cleaned.
+
+[4mRunning "shell:readme" (shell) task[24m
+
+> pwa-wp@ generate-readme /home/travis/build/xwp/pwa-wp
+> ./vendor/xwp/wp-dev-lib/scripts/generate-markdown-readme
+
+Successfully converted WordPress README to Markdown
+/home/travis/build/xwp/pwa-wp/readme.md
+
+[4mRunning "copy:build" (copy) task[24m
+Updating version in pwa.php to 0.3.0-alpha-34e40a7-20190701T225053Z
+Copied [36m111[39m files
+
+[32mDone.[39m
+[4mRunning "shell:create_build_zip" (shell) task[24m
+  adding: wp-includes/ (stored 0%)
+  adding: wp-includes/class-wp-service-worker-scripts.php (deflated 69%)
+  adding: wp-includes/theme-compat/ (stored 0%)
+  adding: wp-includes/theme-compat/header-error.php (deflated 58%)
+  adding: wp-includes/theme-compat/offline.php (deflated 37%)
+  adding: wp-includes/theme-compat/error.php (deflated 37%)
+  adding: wp-includes/theme-compat/500.php (deflated 48%)
+  adding: wp-includes/theme-compat/footer-error.php (deflated 42%)
+  adding: wp-includes/general-template.php (deflated 69%)
+  adding: wp-includes/class-wp-web-app-manifest.php (deflated 66%)
+  adding: wp-includes/query.php (deflated 64%)
+  adding: wp-includes/class-wp-https-ui.php (deflated 68%)
+  adding: wp-includes/template.php (deflated 67%)
+  adding: wp-includes/interface-wp-service-worker-registry.php (deflated 50%)
+  adding: wp-includes/class-wp-https-detection.php (deflated 66%)
+  adding: wp-includes/interface-wp-service-worker-registry-aware.php (deflated 44%)
+  adding: wp-includes/service-workers.php (deflated 67%)
+  adding: wp-includes/default-filters.php (deflated 60%)
+  adding: wp-includes/template-loader.php (deflated 56%)
+  adding: wp-includes/js/ (stored 0%)
+  adding: wp-includes/js/service-worker-offline-commenting.js (deflated 65%)
+  adding: wp-includes/js/service-worker-navigation-routing.js (deflated 67%)
+  adding: wp-includes/js/service-worker-stream-combiner.js (deflated 64%)
+  adding: wp-includes/js/service-worker.js (deflated 34%)
+  adding: wp-includes/js/service-worker-precaching.js (deflated 42%)
+  adding: wp-includes/js/workbox/ (stored 0%)
+  adding: wp-includes/js/workbox/workbox-offline-ga.dev.js (deflated 68%)
+  adding: wp-includes/js/workbox/workbox-streams.prod.js.map (deflated 70%)
+  adding: wp-includes/js/workbox/workbox-navigation-preload.dev.js (deflated 72%)
+  adding: wp-includes/js/workbox/workbox-window.prod.es5.mjs.map (deflated 75%)
+  adding: wp-includes/js/workbox/workbox-expiration.dev.js (deflated 74%)
+  adding: wp-includes/js/workbox/workbox-precaching.prod.js (deflated 60%)
+  adding: wp-includes/js/workbox/workbox-streams.dev.js (deflated 73%)
+  adding: wp-includes/js/workbox/workbox-offline-ga.dev.js.map (deflated 68%)
+  adding: wp-includes/js/workbox/workbox-core.dev.js (deflated 77%)
+  adding: wp-includes/js/workbox/workbox-range-requests.dev.js (deflated 71%)
+  adding: wp-includes/js/workbox/workbox-core.prod.js (deflated 58%)
+  adding: wp-includes/js/workbox/workbox-routing.prod.js (deflated 57%)
+  adding: wp-includes/js/workbox/workbox-offline-ga.prod.js (deflated 53%)
+  adding: wp-includes/js/workbox/workbox-core.dev.js.map (deflated 73%)
+  adding: wp-includes/js/workbox/workbox-sw.js.map (deflated 59%)
+  adding: wp-includes/js/workbox/workbox-background-sync.dev.js (deflated 76%)
+  adding: wp-includes/js/workbox/workbox-precaching.dev.js.map (deflated 74%)
+  adding: wp-includes/js/workbox/workbox-cacheable-response.dev.js (deflated 74%)
+  adding: wp-includes/js/workbox/workbox-window.dev.mjs (deflated 72%)
+  adding: wp-includes/js/workbox/workbox-expiration.dev.js.map (deflated 72%)
+  adding: wp-includes/js/workbox/workbox-core.prod.js.map (deflated 73%)
+  adding: wp-includes/js/workbox/workbox-range-requests.dev.js.map (deflated 69%)
+  adding: wp-includes/js/workbox/workbox-strategies.dev.js (deflated 86%)
+  adding: wp-includes/js/workbox/workbox-range-requests.prod.js.map (deflated 68%)
+  adding: wp-includes/js/workbox/workbox-streams.prod.js (deflated 52%)
+  adding: wp-includes/js/workbox/workbox-broadcast-update.prod.js.map (deflated 71%)
+  adding: wp-includes/js/workbox/workbox-background-sync.dev.js.map (deflated 73%)
+  adding: wp-includes/js/workbox/workbox-precaching.dev.js (deflated 77%)
+  adding: wp-includes/js/workbox/workbox-window.dev.umd.js.map (deflated 74%)
+  adding: wp-includes/js/workbox/workbox-streams.dev.js.map (deflated 70%)
+  adding: wp-includes/js/workbox/workbox-routing.dev.js.map (deflated 74%)
+  adding: wp-includes/js/workbox/workbox-navigation-preload.dev.js.map (deflated 71%)
+  adding: wp-includes/js/workbox/workbox-expiration.prod.js (deflated 57%)
+  adding: wp-includes/js/workbox/workbox-range-requests.prod.js (deflated 51%)
+  adding: wp-includes/js/workbox/workbox-window.prod.mjs (deflated 60%)
+  adding: wp-includes/js/workbox/workbox-window.prod.es5.mjs (deflated 60%)
+  adding: wp-includes/js/workbox/workbox-precaching.prod.js.map (deflated 73%)
+  adding: wp-includes/js/workbox/workbox-broadcast-update.dev.js (deflated 73%)
+  adding: wp-includes/js/workbox/workbox-strategies.prod.js.map (deflated 84%)
+  adding: wp-includes/js/workbox/workbox-strategies.dev.js.map (deflated 84%)
+  adding: wp-includes/js/workbox/workbox-cacheable-response.prod.js (deflated 44%)
+  adding: wp-includes/js/workbox/workbox-window.dev.es5.mjs.map (deflated 73%)
+  adding: wp-includes/js/workbox/workbox-cacheable-response.prod.js.map (deflated 70%)
+  adding: wp-includes/js/workbox/workbox-routing.prod.js.map (deflated 74%)
+  adding: wp-includes/js/workbox/workbox-window.dev.es5.mjs (deflated 72%)
+  adding: wp-includes/js/workbox/workbox-window.prod.mjs.map (deflated 75%)
+  adding: wp-includes/js/workbox/workbox-window.prod.umd.js.map (deflated 75%)
+  adding: wp-includes/js/workbox/workbox-background-sync.prod.js.map (deflated 72%)
+  adding: wp-includes/js/workbox/workbox-strategies.prod.js (deflated 76%)
+  adding: wp-includes/js/workbox/workbox-navigation-preload.prod.js (deflated 54%)
+  adding: wp-includes/js/workbox/workbox-background-sync.prod.js (deflated 59%)
+  adding: wp-includes/js/workbox/workbox-window.dev.mjs.map (deflated 74%)
+  adding: wp-includes/js/workbox/workbox-cacheable-response.dev.js.map (deflated 71%)
+  adding: wp-includes/js/workbox/workbox-offline-ga.prod.js.map (deflated 65%)
+  adding: wp-includes/js/workbox/workbox-navigation-preload.prod.js.map (deflated 70%)
+  adding: wp-includes/js/workbox/workbox-sw.js (deflated 46%)
+  adding: wp-includes/js/workbox/workbox-routing.dev.js (deflated 76%)
+  adding: wp-includes/js/workbox/workbox-window.prod.umd.js (deflated 60%)
+  adding: wp-includes/js/workbox/workbox-broadcast-update.prod.js (deflated 51%)
+  adding: wp-includes/js/workbox/workbox-broadcast-update.dev.js.map (deflated 71%)
+  adding: wp-includes/js/workbox/workbox-window.dev.umd.js (deflated 73%)
+  adding: wp-includes/js/workbox/workbox-expiration.prod.js.map (deflated 71%)
+  adding: wp-includes/post-template.php (deflated 51%)
+  adding: wp-includes/class-wp-service-workers.php (deflated 65%)
+  adding: wp-includes/class-wp.php (deflated 53%)
+  adding: wp-includes/class-wp-query.php (deflated 51%)
+  adding: wp-includes/components/ (stored 0%)
+  adding: wp-includes/components/class-wp-service-worker-precaching-routes-component.php (deflated 60%)
+  adding: wp-includes/components/class-wp-service-worker-caching-routes-component.php (deflated 64%)
+  adding: wp-includes/components/class-wp-service-worker-caching-routes.php (deflated 69%)
+  adding: wp-includes/components/class-wp-service-worker-navigation-routing-component.php (deflated 75%)
+  adding: wp-includes/components/class-wp-service-worker-configuration-component.php (deflated 61%)
+  adding: wp-includes/components/class-wp-service-worker-precaching-routes.php (deflated 58%)
+  adding: wp-includes/components/interface-wp-service-worker-component.php (deflated 55%)
+  adding: LICENSE (deflated 62%)
+  adding: readme.txt (deflated 67%)
+  adding: wp-admin/ (stored 0%)
+  adding: wp-admin/admin.php (deflated 47%)
+  adding: wp-admin/error.php (deflated 55%)
+  adding: pwa.php (deflated 72%)
+  adding: integrations/ (stored 0%)
+  adding: integrations/class-wp-service-worker-styles-integration.php (deflated 62%)
+  adding: integrations/class-wp-service-worker-site-icon-integration.php (deflated 56%)
+  adding: integrations/functions.php (deflated 67%)
+  adding: integrations/class-wp-service-worker-fonts-integration.php (deflated 58%)
+  adding: integrations/class-wp-service-worker-custom-background-integration.php (deflated 55%)
+  adding: integrations/class-wp-service-worker-custom-header-integration.php (deflated 66%)
+  adding: integrations/class-wp-service-worker-scripts-integration.php (deflated 62%)
+  adding: integrations/class-wp-service-worker-custom-logo-integration.php (deflated 57%)
+  adding: integrations/class-wp-service-worker-base-integration.php (deflated 64%)
+  adding: integrations/interface-wp-service-worker-integration.php (deflated 60%)
+  adding: integrations/class-wp-service-worker-admin-assets-integration.php (deflated 66%)
+
+ZIP of build: /home/travis/build/xwp/pwa-wp/pwa.zip
+
+[32mDone.[39m
+travis_time:end:1d4cc834:start=1562021452773084113,finish=1562021454940469472,duration=2167385359[0Ktravis_fold:end:install.4[0Ktravis_fold:start:install.5[0Ktravis_time:start:0acbb277[0K$ export DEV_LIB_PATH=vendor/xwp/wp-dev-lib/scripts
+travis_time:end:0acbb277:start=1562021454944951997,finish=1562021454947472214,duration=2520217[0Ktravis_fold:end:install.5[0Ktravis_fold:start:install.6[0Ktravis_time:start:09350019[0K$ source "$DEV_LIB_PATH/travis.install.sh"
+Opting for phpunit 4.8 for PHP 5.6
+git diff master...34e40a705d3cb187e05b2ad038821e043ecd9c62
+Skipping PHPCS per DEV_LIB_SKIP / DEV_LIB_ONLY
+travis_time:end:09350019:start=1562021454951399988,finish=1562021458189255101,duration=3237855113[0Ktravis_fold:end:install.6[0Ktravis_time:start:00fe7a1f[0K$ source "$DEV_LIB_PATH/travis.script.sh"
+## Checking files, scope all:
+
+## ESLint
+## PHP syntax check
+No syntax errors detected in bin/verify-version-consistency.php
+No syntax errors detected in integrations/class-wp-service-worker-admin-assets-integration.php
+No syntax errors detected in integrations/class-wp-service-worker-base-integration.php
+No syntax errors detected in integrations/class-wp-service-worker-custom-background-integration.php
+No syntax errors detected in integrations/class-wp-service-worker-custom-header-integration.php
+No syntax errors detected in integrations/class-wp-service-worker-custom-logo-integration.php
+No syntax errors detected in integrations/class-wp-service-worker-fonts-integration.php
+No syntax errors detected in integrations/class-wp-service-worker-scripts-integration.php
+No syntax errors detected in integrations/class-wp-service-worker-site-icon-integration.php
+No syntax errors detected in integrations/class-wp-service-worker-styles-integration.php
+No syntax errors detected in integrations/functions.php
+No syntax errors detected in integrations/interface-wp-service-worker-integration.php
+No syntax errors detected in pwa.php
+No syntax errors detected in tests/components/test-class-wp-service-worker-caching-routes.php
+No syntax errors detected in tests/components/test-class-wp-service-worker-precaching-routes.php
+No syntax errors detected in tests/test-class-wp-https-detection.php
+No syntax errors detected in tests/test-class-wp-https-ui.php
+No syntax errors detected in tests/test-class-wp-service-worker-scripts.php
+No syntax errors detected in tests/test-class-wp-service-workers.php
+No syntax errors detected in tests/test-class-wp-web-app-manifest.php
+No syntax errors detected in tests/test-pwa.php
+No syntax errors detected in wp-admin/admin.php
+No syntax errors detected in wp-admin/error.php
+No syntax errors detected in wp-includes/class-wp-https-detection.php
+No syntax errors detected in wp-includes/class-wp-https-ui.php
+No syntax errors detected in wp-includes/class-wp.php
+No syntax errors detected in wp-includes/class-wp-query.php
+No syntax errors detected in wp-includes/class-wp-service-worker-scripts.php
+No syntax errors detected in wp-includes/class-wp-service-workers.php
+No syntax errors detected in wp-includes/class-wp-web-app-manifest.php
+No syntax errors detected in wp-includes/components/class-wp-service-worker-caching-routes-component.php
+No syntax errors detected in wp-includes/components/class-wp-service-worker-caching-routes.php
+No syntax errors detected in wp-includes/components/class-wp-service-worker-configuration-component.php
+No syntax errors detected in wp-includes/components/class-wp-service-worker-navigation-routing-component.php
+No syntax errors detected in wp-includes/components/class-wp-service-worker-precaching-routes-component.php
+No syntax errors detected in wp-includes/components/class-wp-service-worker-precaching-routes.php
+No syntax errors detected in wp-includes/components/interface-wp-service-worker-component.php
+No syntax errors detected in wp-includes/default-filters.php
+No syntax errors detected in wp-includes/general-template.php
+No syntax errors detected in wp-includes/interface-wp-service-worker-registry-aware.php
+No syntax errors detected in wp-includes/interface-wp-service-worker-registry.php
+No syntax errors detected in wp-includes/post-template.php
+No syntax errors detected in wp-includes/query.php
+No syntax errors detected in wp-includes/service-workers.php
+No syntax errors detected in wp-includes/template-loader.php
+No syntax errors detected in wp-includes/template.php
+No syntax errors detected in wp-includes/theme-compat/500.php
+No syntax errors detected in wp-includes/theme-compat/error.php
+No syntax errors detected in wp-includes/theme-compat/footer-error.php
+No syntax errors detected in wp-includes/theme-compat/header-error.php
+No syntax errors detected in wp-includes/theme-compat/offline.php
+## XMLLINT
+
+## PHPUnit tests
+Installing WP from https://develop.svn.wordpress.org/tags/5.2.2/ to /tmp/wordpress
+Warning: Using a password on the command line interface can be insecure.
+mysqladmin: DROP DATABASE wordpress_test failed;
+error: 'Can't drop database 'wordpress_test'; database doesn't exist'
+wordpress_test does not exist yet
+Warning: Using a password on the command line interface can be insecure.
+DB wordpress_test created
+WP and unit tests installed
+Location: /tmp/wordpress/src/wp-content/plugins/pwa
+Installing...
+Running as single site... To run multisite, use -c tests/phpunit/multisite.xml
+Not running ajax tests. To execute these, use --group ajax.
+Not running ms-files tests. To execute these, use --group ms-files.
+Not running external-http tests. To execute these, use --group external-http.
+PHPUnit 4.8.36 by Sebastian Bergmann and contributors.
+
+...............................................
+
+Time: 2.06 seconds, Memory: 58.25MB
+
+[30;42mOK (47 tests, 144 assertions)[0m
+Skipping codeception since not configured
+travis_time:end:00fe7a1f:start=1562021458193850843,finish=1562021474833332349,duration=16639481506[0K[32;1mThe command "source "$DEV_LIB_PATH/travis.script.sh"" exited with 0.[0m
+
+travis_fold:start:cache.2[0Kstore build cache
+travis_time:start:0a3514d9[0Ktravis_time:end:0a3514d9:start=1562021474837789723,finish=1562021474840684835,duration=2895112[0Ktravis_time:start:2467e6ac[0K[32;1mchanges detected (content changed, file is created, or file is deleted):\n/home/travis/.npm/anonymous-cli-metrics.json
+/home/travis/.npm/index-v5/34/8e/30c54cce758990bcd1b33114c4aa8a9e5a25c152ac39d9feab22b7e13e00\n[0m
+[32;1mchanges detected, packing new archive[0m
+[32;1muploading PR.178/cache-linux-trusty-f28df08ef2699919229764ecee79b38d2ec59f8a0ec11d07ab6d9d8ccab4866d--php-5.6.tgz[0m
+[32;1mcache uploaded[0m
+travis_time:end:2467e6ac:start=1562021474844511597,finish=1562021480350213581,duration=5505701984[0Ktravis_fold:end:cache.2[0K
+travis_fold:start:after_script[0Ktravis_time:start:13745400[0K$ source "$DEV_LIB_PATH/travis.after_script.sh"
+
+if can_generate_coverage_clover && [ -s "$TEMP_DIRECTORY/paths-scope-php" ] && [ -n "$INITIAL_DIR" ]; then
+	cd "$INITIAL_DIR"
+
+	# Coveralls 1.x.x path
+	COVERALLS_BIN="vendor/bin/coveralls";
+
+	# Coveralls 2.x.x path
+	if [ ! -e "$COVERALLS_BIN" ]; then
+		COVERALLS_BIN="vendor/bin/php-coveralls"
+	fi
+
+	php $COVERALLS_BIN -v
+
+	cd - > /dev/null
+fi
+travis_nanoseconds
+travis_time:end:13745400:start=1562021480354711600,finish=1562021480358026442,duration=3314842[0Ktravis_fold:end:after_script[0Ktravis_run_finish
+travis_cleanup
+travis_footer
+
+Done. Your build exited with 0.
